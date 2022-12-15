@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home snapshot test 1`] = `
+<View>
+  <Text>
+    Home component view test percentage 
+    50
+    % with
+     
+  </Text>
+  <TextInput
+    onChangeText={[Function]}
+    testID="sampletext"
+  />
+  <Text>
+    This is profile
+  </Text>
+</View>
+`;
