@@ -39,7 +39,7 @@ export default class DaysGridView extends Component {
       const firstDayOfMonth = moment({ year, month, day: 1 });
 
       // Determine which day of the week day 1 falls on.
-      // See https://github.com/stephy/CalendarPicker/issues/49
+      // See https://github.com/Sandipan-Saha-JFL/CalendarPicker/issues/49
       // isoWeekday() gets the ISO day of the week with 1=Monday and 7=Sunday.
       const firstWeekDay = firstDayOfMonth.isoWeekday();
 

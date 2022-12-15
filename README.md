@@ -1,6 +1,6 @@
-# react-native-calendar-picker
+# react-native-calendar-picker-patch
 
-[![npm version](https://badge.fury.io/js/react-native-calendar-picker.svg)](https://badge.fury.io/js/react-native-calendar-picker) [![npm](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/react-native-calendar-picker) [![Build Status](https://travis-ci.org/stephy/CalendarPicker.svg?branch=master)](https://travis-ci.org/stephy/CalendarPicker)
+[![npm version](https://badge.fury.io/js/react-native-calendar-picker-patch.svg)](https://badge.fury.io/js/react-native-calendar-picker-patch) [![npm](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/react-native-calendar-picker-patch) [![Build Status](https://travis-ci.org/stephy/CalendarPicker.svg?branch=master)](https://travis-ci.org/stephy/CalendarPicker)
 
 This is a Calendar Picker Component for React Native
 
@@ -12,7 +12,7 @@ The `scrollable` prop was introduced in 7.0.0 and features a bi-directional infi
 
 To use the calendar you just need to:
 ```sh
-npm install --save react-native-calendar-picker
+npm install --save react-native-calendar-picker-patch
 ```
 
 # Prerequisites
@@ -32,7 +32,7 @@ import {
   Text,
   View
 } from 'react-native';
-import CalendarPicker from 'react-native-calendar-picker';
+import CalendarPicker from 'react-native-calendar-picker-patch';
 
 export default class App extends Component {
   constructor(props) {
@@ -159,7 +159,7 @@ import {
   Text,
   View
 } from 'react-native';
-import CalendarPicker from 'react-native-calendar-picker';
+import CalendarPicker from 'react-native-calendar-picker-patch';
 
 export default class App extends Component {
   constructor(props) {
@@ -233,7 +233,7 @@ import {
   Text,
   View
 } from 'react-native';
-import CalendarPicker from 'react-native-calendar-picker';
+import CalendarPicker from 'react-native-calendar-picker-patch';
 
 export default class App extends Component {
   constructor(props) {
@@ -399,9 +399,9 @@ These internal methods may be accessed through a ref to the CalendarPicker.
 
 ## TypeScript
 
-Definitions are available at https://www.npmjs.com/package/@types/react-native-calendar-picker courtesy of [automatensalat](https://github.com/automatensalat).
+Definitions are available at https://www.npmjs.com/package/@types/react-native-calendar-picker-patch courtesy of [automatensalat](https://github.com/automatensalat).
 ```
-npm install --save @types/react-native-calendar-picker
+npm install --save @types/react-native-calendar-picker-patch
 ```
 
 
