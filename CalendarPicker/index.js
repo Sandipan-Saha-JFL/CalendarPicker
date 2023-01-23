@@ -52,6 +52,7 @@ export default class CalendarPicker extends Component {
     selectedRangeStartStyle: null,
     selectedRangeEndStyle: null,
     selectedRangeStyle: null,
+    onViewTypeChange: null
   };
 
   componentDidUpdate(prevProps) {
@@ -322,7 +323,11 @@ export default class CalendarPicker extends Component {
       const renderMonthParams = extraState || {
         renderMonthParams: {...this.state.renderMonthParams, month, year}
       };
-      this.setState({ currentMonth, currentYear, ...renderMonthParams });
+      this.setState({ currentMonth, currentYear, ...renderMonthParams }, () => {
+        if (typeof onViewTypeChange == 'function') {
+          onViewTypeChange(extraState?.currentView || 'days');
+        }
+      });
     }
     const currentMonthYear = moment({year, month, hour: 12});
     this.props.onMonthChange && this.props.onMonthChange(currentMonthYear);
@@ -331,12 +336,20 @@ export default class CalendarPicker extends Component {
   handleOnPressYear = () => {
     this.setState({
       currentView: 'years'
+    }, () => {
+      if (typeof onViewTypeChange == 'function') {
+        onViewTypeChange('years');
+      }
     });
   }
 
   handleOnPressMonth = () => {
     this.setState({
       currentView: 'months'
+    }, () => {
+      if (typeof onViewTypeChange == 'function') {
+        onViewTypeChange('months');
+      }
     });
   }
 

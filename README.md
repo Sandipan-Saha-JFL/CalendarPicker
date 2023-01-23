@@ -202,6 +202,9 @@ export default class App extends Component {
           selectedDayColor="#7300e6"
           selectedDayTextColor="#FFFFFF"
           onDateChange={this.onDateChange}
+          onViewTypeChange={(type) => { // Possible value days|months|years
+            // On view change to days or month or year
+          }}
         />
 
         <View>
@@ -285,6 +288,9 @@ export default class App extends Component {
             color: '#000000',
           }}
           onDateChange={this.onDateChange}
+           onViewTypeChange={(type) => { // Possible value days|months|years
+            // On view change to days or month or year
+          }}
         />
 
         <View>
@@ -333,6 +339,9 @@ render() {
       todayBackgroundColor={'transparent'}
       customDatesStyles={customDatesStyles}
       minDate={today}
+       onViewTypeChange={(type) => { // Possible value days|months|years
+            // On view change to days or month or year
+          }}
     />
   );
 }
@@ -383,6 +392,9 @@ const customDatesStylesCallback = date => {
 <CalendarPicker
       customDayHeaderStyles={customDayHeaderStylesCallback}
       customDatesStyles={customDatesStylesCallback}
+       onViewTypeChange={(type) => { // Possible value days|months|years
+            // On view change to days or month or year
+          }}
     />
 ```
 
