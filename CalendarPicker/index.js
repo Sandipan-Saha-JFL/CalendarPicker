@@ -324,8 +324,8 @@ export default class CalendarPicker extends Component {
         renderMonthParams: {...this.state.renderMonthParams, month, year}
       };
       this.setState({ currentMonth, currentYear, ...renderMonthParams }, () => {
-        if (typeof onViewTypeChange == 'function') {
-          onViewTypeChange(extraState?.currentView || 'days');
+        if (typeof this.props.onViewTypeChange == 'function') {
+          this.props.onViewTypeChange(extraState?.currentView || 'days');
         }
       });
     }
@@ -337,8 +337,8 @@ export default class CalendarPicker extends Component {
     this.setState({
       currentView: 'years'
     }, () => {
-      if (typeof onViewTypeChange == 'function') {
-        onViewTypeChange('years');
+      if (typeof this.props.onViewTypeChange == 'function') {
+        this.props.onViewTypeChange('years');
       }
     });
   }
@@ -347,8 +347,8 @@ export default class CalendarPicker extends Component {
     this.setState({
       currentView: 'months'
     }, () => {
-      if (typeof onViewTypeChange == 'function') {
-        onViewTypeChange('months');
+      if (typeof this.props.onViewTypeChange == 'function') {
+        this.props.onViewTypeChange('months');
       }
     });
   }
