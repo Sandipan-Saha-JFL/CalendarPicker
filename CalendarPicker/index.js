@@ -502,6 +502,7 @@ export default class CalendarPicker extends Component {
       onMonthChange,
       scrollable,
       horizontal,
+      yearHeaderWrapperStyle
     } = this.props;
 
     let content;
@@ -541,6 +542,7 @@ export default class CalendarPicker extends Component {
           nextTitleStyle={nextTitleStyle}
           onSelectYear={this.handleOnSelectMonthYear}
           headingLevel={headingLevel}
+          yearHeaderWrapperStyle={yearHeaderWrapperStyle}
         />
       );
       break;

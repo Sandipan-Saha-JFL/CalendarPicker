@@ -32,3 +32,18 @@ Please do not change this file when creating a pull request
 ### Version 5.8.0
 
 	- Add support for initial date, Date that calendar opens to. Defaults to today. Fix expo dependencies
+
+
+### Version 7.1.4
+
+	- Added onViewTypeChsnge event which provides the current view type in date, month or year view selection
+
+
+### Version 7.1.5
+
+	- Fixed bug for onViewTypeChange event not triggering
+
+
+### Version 7.1.6
+
+	- Added yearHeaderWrapperStyle property for Year view header customisation

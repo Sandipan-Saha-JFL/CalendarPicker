@@ -202,6 +202,7 @@ export default class App extends Component {
           selectedDayColor="#7300e6"
           selectedDayTextColor="#FFFFFF"
           onDateChange={this.onDateChange}
+          yearHeaderWrapperStyle={{justifyContent: 'center'}}
           onViewTypeChange={(type) => { // Possible value days|months|years
             // On view change to days or month or year
           }}
@@ -287,6 +288,7 @@ export default class App extends Component {
             fontFamily: 'Cochin',
             color: '#000000',
           }}
+          yearHeaderWrapperStyle={{justifyContent: 'center'}}
           onDateChange={this.onDateChange}
            onViewTypeChange={(type) => { // Possible value days|months|years
             // On view change to days or month or year
